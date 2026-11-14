@@ -47,8 +47,7 @@ The database scripts are described in [`database/README.md`](database/README.md)
 ## Using this project
 
 This repository is open for students to read, take notes from and get ideas for their own work.
-It is **not** free to copy: submitting this project, or large parts of it, as your own work is not
-permitted. No licence is granted to reuse, redistribute or sell the code.
+Please don't copy the project or submit it as your own.
 
 ---
 
