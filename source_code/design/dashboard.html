@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moksha Fitness — Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Unbounded:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css?v=16">
+<script src="assets/theme.js?v=16"></script>
+</head>
+<body>
+<div class="app" id="app">
+  <aside class="side" id="side" aria-label="Main navigation">
+    <a class="logo" href="#/"><span class="mark" role="img" aria-label="Moksha Fitness"></span><div><b>MOKSHA</b><small id="areaLabel">Admin</small></div></a>
+    <nav id="navList"></nav>
+    <div class="spacer"></div>
+    <button class="theme-switch" type="button" role="switch" aria-checked="false" data-theme-toggle>
+      <span class="lbl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span data-theme-label>Dark mode</span></span>
+      <span class="track" aria-hidden="true"></span>
+    </button>
+    <div class="me">
+      <div class="avatar" id="meAv"></div>
+      <div><b id="meName"></b><span id="meRole"></span></div>
+      <button class="logout" type="button" data-pw hidden title="Change password" aria-label="Change password"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="4"/><path d="M10.8 12.2 20 3M17 6l3 3M14 9l2 2"/></svg></button>
+      <a class="logout" href="home.html" title="Log out" aria-label="Log out"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></svg></a>
+    </div>
+  </aside>
+  <main class="main" id="main"></main>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<div class="proto no-print" aria-label="Preview as role"><span>Preview as</span>
+  <button data-r="owner">Owner</button><button data-r="accountant">Accounts</button><button data-r="front_desk">Front desk</button><button data-r="trainer">Trainer</button><button data-r="member">Member</button>
+</div>
+
+<script src="assets/data.js?v=16"></script>
+<script src="assets/ui.js?v=16"></script>
+<script src="assets/app.js?v=16"></script>
+<script src="assets/pages-people.js?v=16"></script>
+<script src="assets/pages-ops.js?v=16"></script>
+<script src="assets/schedule.js?v=16"></script>
+<script src="assets/boot.js?v=16"></script>
+</body>
+</html>
